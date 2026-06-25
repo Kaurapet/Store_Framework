@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard - Thrift & Trend Online</title>
+  <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Thrift & Trend Admin</h1>
+    <nav>
+      <a href="Homepage.html">View Site</a>
+      <a href="Adminpage.html" class="active">Admin Panel</a>
+      <a href="Loginpage.html">Login</a>
+    </nav>
+  </header>
+
+  <!-- Admin Dashboard Layout -->
+  <main class="dashboard">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h3>Admin Menu</h3>
+      <ul>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#users">Manage Users</a></li>
+        <li><a href="#products">Manage Products</a></li>
+        <li><a href="#orders">Orders</a></li>
+        <li><a href="#analytics">Analytics</a></li>
+        <li><a href="login.html">Logout</a></li>
+      </ul>
+    </aside>
+
+    <!-- Dashboard Content -->
+    <section class="content">
+      <!-- Overview -->
+      <div class="section" id="overview">
+        <h2>Dashboard Overview</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>Users</h3>
+            <p><strong>1,240</strong> registered users</p>
+          </div>
+          <div class="card">
+            <h3>Products</h3>
+            <p><strong>312</strong> active listings</p>
+          </div>
+          <div class="card">
+            <h3>Orders</h3>
+            <p><strong>428</strong> total orders</p>
+          </div>
+          <div class="card">
+            <h3>Revenue</h3>
+            <p><strong>₦1.8M</strong> total sales</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Manage Users -->
+      <div class="section" id="users">
+        <h2>Manage Users</h2>
+        <table class="admin-table">
+          <thead>
+            <tr>
+              <th>User ID</th>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Status</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>U001</td>
+              <td>Jane Doe</td>
+              <td>jane@example.com</td>
+              <td>Active</td>
+              <td>
+                <button>Edit</button>
+                <button class="delete">Delete</button>
+              </td>
+            </tr>
+            <tr>
+              <td>U002</td>
+              <td>John Smith</td>
+              <td>john@example.com</td>
+              <td>Suspended</td>
+              <td>
+                <button>Edit</button>
+                <button class="delete">Delete</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Manage Products -->
+      <div class="section" id="products">
+        <h2>Manage Products</h2>
+        <div class="listings">
+          <div class="card">
+            <img src="https://via.placeholder.com/200x200" alt="Product">
+            <p>Vintage Denim Jacket</p>
+            <p><strong>₦6,000</strong></p>
+            <button>Edit</button>
+            <button class="delete">Delete</button>
+          </div>
+          <div class="card">
+            <img src="https://via.placeholder.com/200x200" alt="Product">
+            <p>Luxury Perfume</p>
+            <p><strong>₦12,500</strong></p>
+            <button>Edit</button>
+            <button class="delete">Delete</button>
+          </div>
+        </div>
+        <button class="add-product">+ Add New Product</button>
+      </div>
+
+      <!-- Orders -->
+      <div class="section" id="orders">
+        <h2>Order Management</h2>
+        <table class="admin-table">
+          <thead>
+            <tr>
+              <th>Order ID</th>
+              <th>Customer</th>
+              <th>Product</th>
+              <th>Status</th>
+              <th>Amount</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>#101</td>
+              <td>Jane Doe</td>
+              <td>Nike Airforce</td>
+              <td>Pending</td>
+              <td>₦7,500</td>
+              <td>
+                <button>Update</button>
+                <button class="delete">Cancel</button>
+              </td>
+            </tr>
+            <tr>
+              <td>#102</td>
+              <td>John Smith</td>
+              <td>Perfume Set</td>
+              <td>Delivered</td>
+              <td>₦9,800</td>
+              <td>
+                <button>View</button>
+                <button class="delete">Refund</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Analytics -->
+      <div class="section" id="analytics">
+        <h2>Site Analytics</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>Daily Visitors</h3>
+            <p>💡 <strong>4,210</strong> visits today</p>
+          </div>
+          <div class="card">
+            <h3>Conversion Rate</h3>
+            <p>📈 <strong>8.4%</strong> sales conversion</p>
+          </div>
+          <div class="card">
+            <h3>Most Viewed Product</h3>
+            <p>👟 Nike Airforce Sneakers</p>
+          </div>
+          <div class="card">
+            <h3>Top Earning Category</h3>
+            <p>👜 Handbags</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Thrift & Trend Online | Admin Dashboard</p>
+  </footer>
+
+</body>
+</html>

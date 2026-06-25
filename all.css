@@ -1,0 +1,528 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #222;
+  }
+  
+  h1 {
+    margin: 10px;
+    width: 650px;
+    justify-content: right;
+  }
+  
+  h2, h3, h4 {
+    margin: 10px 0;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  button {
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  button:hover {
+    opacity: 0.9;
+  }
+  
+  /* ==============================
+     HEADER & NAVIGATION
+     ============================== */
+  header {
+      background: #222;
+      color: white;
+      padding: 15px 30px;
+      display: flex;
+      align-items: center;
+      justify-content: left;
+      position: fixed;
+    width: 100%;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #ffcc00;
+  }
+  
+  nav a {
+    color: white;
+    margin: 0 10px;
+    font-weight: bold;
+  }
+  
+  nav a:hover,
+  nav a.active {
+    color: #ffcc00;
+  }
+  
+  /* ==============================
+     HERO SECTION (Homepage)
+     ============================== */
+  
+  .hero {
+    text-align: center;
+    padding: 60px 20px;
+    background: url('https://via.placeholder.com/1200x400') no-repeat center;
+    background-size: cover;
+    color: white;
+  }
+  
+  .hero h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+      color: black;
+  }
+  
+  .hero p {
+      font-size: 18px;
+      margin-bottom: 20px;
+      color: black;
+  }
+  
+  .hero button {
+    padding: 12px 20px;
+    font-size: 18px;
+    background: #ffcc00;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  /* ==============================
+     CATEGORY, TRENDING & WHY-US
+     ============================== */
+  .categories, .trending, .why-us {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    width: 200px;
+  }
+  
+  /* ==============================
+     SHOP PAGE
+     ============================== */
+  .shop-container {
+    display: flex;
+    margin: 20px;
+    gap: 20px;
+  }
+  
+  .sidebar {
+    width: 240px;
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  }
+  
+  .sidebar h3 {
+    margin-bottom: 10px;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar ul li {
+    margin: 10px 0;
+  }
+  
+  .sidebar ul li a {
+      display: block;
+      padding: 10px 0;
+      font-size: 15px;
+      color: #444;
+      font-weight: bold;
+  }
+  
+  .sidebar ul li a:hover {
+    color: #ffcc00;
+  }
+  
+  .products {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+  }
+  
+  .product-card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+  
+  .product-card img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .product-card h4 {
+    margin: 10px 0;
+  }
+  
+  .product-card button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background: #ffcc00;
+    font-weight: bold;
+  }
+  
+  .product-card button:hover {
+    background: #e6b800;
+  }
+  
+  /* ==============================
+     ABOUT US PAGE
+     ============================== */
+  .about-section {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: 30px auto;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  }
+  
+  .values {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px 0;
+  }
+  
+  .value-card {
+    background: #f1f1f1;
+    padding: 15px;
+    border-radius: 10px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  }
+  
+  .team {
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  .team-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+  }
+  
+  .team-member {
+    background: #f1f1f1;
+    padding: 15px;
+    border-radius: 8px;
+    width: 200px;
+    box-shadow: 0 0 6px rgba(0,0,0,0.1);
+  }
+  
+  .cta {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .cta button {
+    padding: 12px 20px;
+    background: #ffcc00;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+  }
+  
+  /* ==============================
+     BLOG PAGE
+     ============================== */
+  .blog-container {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+  }
+  
+  .post {
+    background: white;
+    width: 800px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  }
+  
+  .post img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .post .share a {
+    color: #ffcc00;
+    margin-right: 10px;
+    font-weight: bold;
+  }
+  
+  .sidebar .ad {
+    background: #f1f1f1;
+    width:
+    padding: px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  /* ==============================
+     CONTACT PAGE
+     ============================== */
+  .contact-container {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+  
+  .contact-details, .contact-form {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  }
+  
+  .contact-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-form label {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+  }
+  
+  .contact-form button {
+    margin-top: 15px;
+    padding: 12px;
+    background: #ffcc00;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+  }
+  
+  .map {
+    text-align: center;
+    margin: 30px;
+  }
+  
+  .map iframe {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    border: none;
+  }
+  
+  /* ==============================
+     ACCOUNT PAGE (Dashboard)
+     ============================== */
+  .dashboard {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 270px 1fr;
+    gap: 20px;
+  }
+  
+  .sidebar h3 {
+    margin-bottom: 10px;
+  }
+  
+  .content {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  }
+  
+  .section {
+    margin-bottom: 30px;
+  }
+  
+  .orders, .wishlist, .listings {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+  }
+  
+  .card img {
+    width: 100%;
+    border-radius: 6px;
+  }
+  
+  .add-product {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    background: #ffcc00;
+    font-weight: bold;
+  }
+  
+  /* ==============================
+     LOGIN & SIGN-UP PAGE
+     ============================== */
+  .auth-container {
+    max-width: 400px;
+    margin: 50px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: left;
+  }
+  
+  .auth-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .auth-container label {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  .auth-container input {
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width: 100%;
+  }
+  
+  .auth-container button {
+    margin-top: 15px;
+    padding: 12px;
+    background: #ffcc00;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    width: 100%;
+  }
+  
+  .toggle {
+    text-align: center;
+    margin-top: 15px;
+  }
+  
+  .toggle a {
+    color: #ffcc00;
+    font-weight: bold;
+  }
+  
+  /* ==============================
+     ADMIN DASHBOARD PAGE
+     ============================== */
+  .admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .admin-table th, .admin-table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  .admin-table th {
+    background: #222;
+    color: #ffcc00;
+  }
+  
+  .admin-table tr:nth-child(even) {
+    background: #f9f9f9;
+  }
+  
+  .admin-table button {
+    padding: 6px 10px;
+    border: none;
+    border-radius: 5px;
+    background: #ffcc00;
+    font-weight: bold;
+  }
+  
+  .admin-table button.delete {
+    background: #ff5c5c;
+    color: white;
+  }
+  
+  .admin-table button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Admin Cards */
+  #overview .grid .card {
+    background: linear-gradient(145deg, #fff, #f1f1f1);
+    border-left: 6px solid #ffcc00;
+    transition: all 0.3s ease;
+  }
+  
+  #overview .grid .card:hover {
+    transform: scale(1.05);
+  }
+  
+  /* ==============================
+     FOOTER
+     ============================== */
+  footer {
+    background: #222;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  footer a {
+    color: #ffcc00;
+    margin: 0 8px;
+  }
+  
+  footer input[type=email] {
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    margin-right: 8px;
+  }
+  

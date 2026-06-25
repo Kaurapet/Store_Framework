@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Account - Thrift & Trend Online</title>
+  <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Thrift & Trend</h1>
+    <nav>
+      <a href="Homepage.html">Home</a>
+      <a href="Shoppage.html">Shop</a>
+      <a href="#">Sell With Us</a>
+      <a href="Blogpage.html">Blog</a>
+      <a href="Aboutpage.html">About Us</a>
+      <a href="Contactpage.html">Contact Us</a>
+      <a href="Accountpage.html" class="active">My Account</a>
+    </nav>
+  </header>
+
+  <!-- Dashboard Layout -->
+  <main class="dashboard">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h3>Dashboard Menu</h3>
+      <ul>
+        <li><a href="#">Overview</a></li>
+        <li><a href="#">Track Orders</a></li>
+        <li><a href="#">Manage Listings</a></li>
+        <li><a href="#">Wishlist</a></li>
+        <li><a href="#">Profile Settings</a></li>
+        <li><a href="login.html">Logout</a></li>
+      </ul>
+    </aside>
+
+    <!-- Dashboard Content -->
+    <section class="content">
+      <h2>Welcome, User!</h2>
+
+      <!-- Overview -->
+      <div class="section">
+        <h3>Dashboard Overview</h3>
+        <p><strong>Recent Orders:</strong> 2</p>
+        <p><strong>Messages:</strong> 1 new message</p>
+        <p><strong>Account Balance:</strong> ₦12,500</p>
+      </div>
+
+      <!-- Orders -->
+      <div class="section">
+        <h3>Track Orders</h3>
+        <div class="orders">
+          <div class="card">Order #001 - Status: Pending</div>
+          <div class="card">Order #002 - Status: Shipped</div>
+          <div class="card">Order #003 - Status: Delivered</div>
+        </div>
+      </div>
+
+      <!-- Listings -->
+      <div class="section">
+        <h3>Manage Listings</h3>
+        <div class="listings">
+          <div class="card">
+            <img src="https://via.placeholder.com/200x200" alt="Product">
+            <p>Nike Sneakers</p>
+            <button>Edit</button>
+            <button>Delete</button>
+          </div>
+          <div class="card">
+            <img src="https://via.placeholder.com/200x200" alt="Product">
+            <p>Perfume Set</p>
+            <button>Edit</button>
+            <button>Delete</button>
+          </div>
+        </div>
+        <button class="add-product">+ Add New Product</button>
+      </div>
+
+      <!-- Wishlist -->
+      <div class="section">
+        <h3>Wishlist</h3>
+        <div class="wishlist">
+          <div class="card">Ladies Handbag - ₦5,000</div>
+          <div class="card">Casual Shirt - ₦3,200</div>
+        </div>
+      </div>
+
+      <!-- Profile Settings -->
+      <div class="section">
+        <h3>Profile Settings</h3>
+        <form class="profile-form">
+          <label>Email:</label>
+          <input type="email" value="user@example.com">
+          <label>Phone:</label>
+          <input type="text" value="+234 801 234 5678">
+          <label>Password:</label>
+          <input type="password" placeholder="Change password">
+          <button type="submit">Update Profile</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Thrift & Trend Online</p>
+    <p>
+      <a href="about.html">About</a> | 
+      <a href="#">FAQs</a> | 
+      <a href="#">Privacy Policy</a> | 
+      <a href="#">Return Policy</a>
+    </p>
+  </footer>
+
+</body>
+</html>
